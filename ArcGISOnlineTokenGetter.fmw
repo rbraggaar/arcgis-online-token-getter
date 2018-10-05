@@ -1,0 +1,505 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    "C:\Program Files\FME\fme.exe" "C:\Users\RobBraggaarTensing\OneDrive - Tensing\FME\Custom transformers\AGOLTokenGetter\ArcGISOnlineTokenGetter.fmw"
+#    
+#    
+#!   LAST_SAVE_BUILD="FME(R) 2017.1.2.1 (20180117 - Build 17725 - WIN64)"
+#!   MAX_LOG_FEATURES="200"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   DESTINATION_ROUTING_FILE=""
+#!   FME_DOCUMENT_GUID="6facb47e-98b8-42c8-ba25-beae0af5becd"
+#!   SOURCE_ROUTING_FILE=""
+#!   MARKDOWN_USAGE=""
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   TERMINATE_REJECTED="NO"
+#!   CATEGORY=""
+#!   VIEW_POSITION="-3300.03 496.88"
+#!   DESCRIPTION=""
+#!   USE_MARKDOWN=""
+#!   DOC_TOP_LEFT="-1709.4 167.002"
+#!   DOC_EXTENTS="669.626 71"
+#!   FME_DOCUMENT_PRIORGUID="bf08ee5e-4e09-4a5b-b31f-f24448de02a1,1662a8f3-c578-4198-a62a-3f8a1b327cf2,f47d3d39-c7bb-4b63-9e73-08711fe39425"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   FME_SERVER_SERVICES=""
+#!   IGNORE_READER_FAILURE="No"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   TITLE=""
+#!   END_PYTHON=""
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="34"
+#!   BEGIN_TCL=""
+#!   LOG_FILE=""
+#!   LAST_SAVE_DATE="2018-03-29T15:24:06"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   USAGE=""
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   BEGIN_PYTHON=""
+#!   REDIRECT_TERMINATORS="NONE"
+#!   FME_BUILD_NUM="17725"
+#!   END_TCL=""
+#!   SHOW_INFO_NODES="true"
+#!   DESTINATION="NONE"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   HISTORY=""
+#!   MARKDOWN_DESCRIPTION=""
+#!   ZOOM_SCALE="100"
+#!   SHOW_ANNOTATIONS="true"
+#!   WORKSPACE_VERSION="1"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   SOURCE="NONE"
+#! >
+#! <DATASETS>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="Inspector"
+#!   VERSION="5"
+#!   POSITION="-1039.77 238.002"
+#!   BOUNDING_RECT="-1039.77 238.002 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17725"
+#! >
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AGOLTokenGetter_Output"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="SubDocumentTransformer"
+#!   VERSION="0"
+#!   POSITION="-1709.4 238.002"
+#!   BOUNDING_RECT="-1709.4 238.002 550.009 71"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17725"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <XFORM_ATTR ATTR_NAME="token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SUB_DOC_NAME" PARM_VALUE="ArcGISOnlineTokenGetter"/>
+#!     <XFORM_PARM PARM_NAME="AGOL_referer" PARM_VALUE="tensing.com"/>
+#!     <XFORM_PARM PARM_NAME="AGOL_password" PARM_VALUE="fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszuASe0S4PiBz0UB2g8ZJ9ARWfFi6N+ZsTOMrmMJptAA0XVpRiuGefOK0sSgS+Q9qpWDMLVFYsr9OOejvdnXoyIqJwbaeYq9C++WmMTIfs159tOgc3PTT15qIUixESiSDi3TStcP4QH2hOAOqzNtgSw8QMJ2bmKJd2EXMbjoQLC2SLNVA0Yguy5SjwM41FCsVH0hp8h5z5EGcRA/SyID45C8jrc1HiuAaMAUQsQ8d6+kMxjy/rpKrLcqnDU3KzfyckSYJmIZP0Qzwx7k/HSjTiVbxugNRyv6jdqyLIvjbfMN39rcCp8CBZKM5mSm9y31vhZv2vT7ZlcvvPcBSNWmK9ssofBZ6jv2Pc)"/>
+#!     <XFORM_PARM PARM_NAME="Expiration_Time" PARM_VALUE="360"/>
+#!     <XFORM_PARM PARM_NAME="AGOL_username" PARM_VALUE="rbraggaar@tensing.com"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="ArcGISOnlineTokenGetter"/>
+#!     <XFORM_PARM PARM_NAME="__COMPOUND_PARAMETERS" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! <SUBDOCUMENT
+#!   NAME="ArcGISOnlineTokenGetter"
+#!   MARKDOWN_DESCRIPTION=""
+#!   FME_DOCUMENT_GUID=""
+#!   IS_VISIBLE="false"
+#!   MARKDOWN_USAGE=""
+#!   DOC_TOP_LEFT="153.127 -421.879"
+#!   LAST_SAVE_DATE=""
+#!   LAST_SAVE_BUILD=""
+#!   PYTHON_COMPATIBILITY="34"
+#!   USAGE=""
+#!   DOC_EXTENTS="3068.78 311.627"
+#!   SUPPRESS_UPGRADE="false"
+#!   TITLE="ArcGISOnlineTokenGetter"
+#!   DESCRIPTION="&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Transformer to easily retrieve an ArcGIS online token.&lt;/p&gt;&#10;"
+#!   XFORM_DEPRECATED="No"
+#!   FME_PROCESS_COUNT="NO_PARALLELISM"
+#!   FME_PROCESS_GROUPS_ORDERED="No"
+#!   VIEW_POSITION="-93.7509 87.5009"
+#!   ZOOM_SCALE="100"
+#!   HISTORY="19-03-2018,Rob&lt;space&gt;Braggaar,"
+#!   DOC_DYNAMIC_INPUT_ATTRS="0"
+#!   FME_PROCESS_GROUP_BY=""
+#!   CATEGORY="Web"
+#!   USE_MARKDOWN="NO"
+#!   FMX_ATTRIBUTE_PROPOGATION_MODE="AUTO"
+#!   FME_DOCUMENT_PRIORGUID=""
+#! >
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_OR_ATTR AGOL_username AGOL username:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI PASSWORD_OR_ATTR AGOL_password AGOL password:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR AGOL_referer AGOL referer:"
+#!   DEFAULT_VALUE="example.com"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI TEXT_OR_ATTR Expiration_Time Expiration time in minutes:"
+#!   DEFAULT_VALUE="120"
+#!   IS_STAND_ALONE="true"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="14"
+#!   NAME="ArcGISOnlineTokenGetter"
+#!   DESCRIPTION="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   TOP_LEFT="153.127 -110.252"
+#!   BOTTOM_RIGHT="3221.91 -421.879"
+#!   BOUNDING_RECT="153.127 -110.252 3068.78 311.627"
+#!   STICKY="true"
+#!   COLOUR="0.529412,0.384314,0.337255"
+#!   CONTENTS="9 5 12 4 8 13 11 10 2 "
+#! />
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="PythonCaller"
+#!   VERSION="4"
+#!   POSITION="1475.02 -218.753"
+#!   BOUNDING_RECT="1475.02 -218.753 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17725"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="agol_username" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="agol_password" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="agol_referer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="agol_expiration" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="HIDE_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSOURCE" PARM_VALUE="import&lt;space&gt;fme&lt;lf&gt;import&lt;space&gt;fmeobjects&lt;lf&gt;import&lt;space&gt;requests&lt;lf&gt;&lt;lf&gt;&lt;lf&gt;def&lt;space&gt;processFeature&lt;openparen&gt;feature&lt;closeparen&gt;:&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;url&lt;space&gt;=&lt;space&gt;&lt;apos&gt;https:&lt;solidus&gt;&lt;solidus&gt;www.arcgis.com&lt;solidus&gt;sharing&lt;solidus&gt;generateToken&lt;apos&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;agol_username&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;agol_username&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;agol_password&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;agol_password&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;referer&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;agol_referer&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;expiration_time&lt;space&gt;=&lt;space&gt;feature.getAttribute&lt;openparen&gt;&lt;apos&gt;agol_expiration&lt;apos&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;body&lt;space&gt;=&lt;space&gt;&lt;opencurly&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;apos&gt;username&lt;apos&gt;:&lt;space&gt;agol_username&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;apos&gt;password&lt;apos&gt;:&lt;space&gt;agol_password&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;apos&gt;referer&lt;apos&gt;:&lt;space&gt;referer&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;apos&gt;request&lt;apos&gt;:&lt;space&gt;&lt;apos&gt;gettoken&lt;apos&gt;&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;apos&gt;f&lt;apos&gt;:&lt;space&gt;&lt;apos&gt;json&lt;apos&gt;&lt;comma&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;apos&gt;expiration&lt;apos&gt;:&lt;space&gt;expiration_time&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;closecurly&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;request&lt;space&gt;=&lt;space&gt;requests.post&lt;openparen&gt;url&lt;comma&gt;&lt;space&gt;headers=&lt;opencurly&gt;&lt;closecurly&gt;&lt;comma&gt;&lt;space&gt;data=body&lt;closeparen&gt;.json&lt;openparen&gt;&lt;closeparen&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;token&lt;space&gt;=&lt;space&gt;request&lt;openbracket&gt;u&lt;apos&gt;token&lt;apos&gt;&lt;closebracket&gt;&lt;lf&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;&lt;space&gt;feature.setAttribute&lt;openparen&gt;&lt;apos&gt;token&lt;apos&gt;&lt;comma&gt;&lt;space&gt;token&lt;closeparen&gt;&lt;lf&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GetAgoToken"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PYTHONSYMBOL" PARM_VALUE="processFeature"/>
+#!     <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="Creator"
+#!   VERSION="5"
+#!   POSITION="245.127 -218.753"
+#!   BOUNDING_RECT="245.127 -218.753 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17725"
+#! >
+#!     <OUTPUT_FEAT NAME="CREATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GEOM" PARM_VALUE="&lt;lt&gt;?xml&lt;space&gt;version=&lt;quote&gt;1.0&lt;quote&gt;&lt;space&gt;encoding=&lt;quote&gt;US_ASCII&lt;quote&gt;&lt;space&gt;standalone=&lt;quote&gt;no&lt;quote&gt;&lt;space&gt;?&lt;gt&gt;&lt;lt&gt;geometry&lt;space&gt;dimension=&lt;quote&gt;2&lt;quote&gt;&lt;gt&gt;&lt;lt&gt;null&lt;solidus&gt;&lt;gt&gt;&lt;lt&gt;&lt;solidus&gt;geometry&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CRE_ATTR" PARM_VALUE="token"/>
+#!     <XFORM_PARM PARM_NAME="NUM" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Trigger"/>
+#!     <XFORM_PARM PARM_NAME="GEOMTYPE" PARM_VALUE="Geometry Object"/>
+#!     <XFORM_PARM PARM_NAME="COORDS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATEND" PARM_VALUE="no"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="AttributeManager"
+#!   VERSION="1"
+#!   POSITION="861.508 -218.753"
+#!   BOUNDING_RECT="861.508 -218.753 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17725"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="agol_username" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="agol_password" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="agol_referer" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="agol_expiration" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="token token  NO_OP  agol_username $(AGOL_username) SET_TO  agol_password $(AGOL_password) SET_TO  agol_referer $(AGOL_referer) SET_TO  agol_expiration $(Expiration_Time) SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="AttributeKeeper"
+#!   VERSION="3"
+#!   POSITION="2070.9 -218.753"
+#!   BOUNDING_RECT="2070.9 -218.753 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="17725"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="token" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="KEEP_ATTRS" PARM_VALUE="token"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="KEEP_LIST" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeKeeper"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <SUBDOCUMENT_IOS>
+#! <SUBDOCUMENT_IO
+#!   IDENTIFIER="4"
+#!   NAME="Output"
+#!   POSITION="2664.66 -221.753"
+#!   BOUNDING_RECT="2664.66 -221.753 -1 -1"
+#!   COLLAPSED="false"
+#!   IS_SOURCE="false"
+#!   ATTR_MODE="0"
+#! >
+#! </SUBDOCUMENT_IO>
+#! </SUBDOCUMENT_IOS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="9"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 CREATED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="0"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! </SUBDOCUMENT>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 34
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE NULL
+READER_KEYWORD NULL_SOURCE
+NULL_SOURCE_DATASET null
+
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)ArcGISOnlineTokenGetter.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_TIMINGS YES
+LOG_FILTER_MASK -17
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME ArcGISOnlineTokenGetter
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+MACRO ArcGISOnlineTokenGetter_WORKSPACE_NAME ArcGISOnlineTokenGetter
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_XFORMER_NAME ArcGISOnlineTokenGetter
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_TRANSFORMER_GROUP 
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)___COMPOUND_PARAMETERS 
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_SUB_DOC_NAME ArcGISOnlineTokenGetter
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AGOL_username rbraggaar@tensing.com
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AGOL_password fme_decrypt(MDowfCN8I3xcG3GQ/TeRRUJUZ5LDPtdvpscbh7Nj9gG/INBkAGA+fkaDrNbhZtfa3rmkUUrCxKWaAFwiYsKgWJNl/0mRpxUuP+IT2c+Qhh26JEZtUWAmpuoaQCdQ3ykKWm2zaoAM5MBCGaGEuYe+6AS07/nLNRJwqp1jdwP1FgVCbXRvZtWfKjEZlNJYQ+EicVc6cv2DxCYJyTljvXwF8mKxenML6FKJiHARQCO8OMJidKKZQJP1SeYIhqB0YrtGw4cGV2ZquQKifvRjB2Tl6wBAWDmeCg+R1jvft1tR17SISyTDv77K+mV80w2aaUSgybbF7coM0BrQPcpehfjlW+YxV73+9mPMFXKQeznZ22T8MJor57O44p8U2NQCw35HiFBs0oVP9VkkY0D/WzGRevseyX1pIEWJSQSFwkJVhiyXavMDz5E5SEYgTZHfVeGBXCDuIEEbfRRkPU5yD2nw2ZAVimDRD7UQhEEY6PosGqU17He4y35WEfAggQ40+EKuupOQSZRsKotTTqlYGHJtX49ymuKqfyZzOAUSUzDMcj8gfDgzOCcuhw2sK3fJaMszuASe0S4PiBz0UB2g8ZJ9ARWfFi6N+ZsTOMrmMJptAA0XVpRiuGefOK0sSgS+Q9qpWDMLVFYsr9OOejvdnXoyIqJwbaeYq9C++WmMTIfs159tOgc3PTT15qIUixESiSDi3TStcP4QH2hOAOqzNtgSw8QMJ2bmKJd2EXMbjoQLC2SLNVA0Yguy5SjwM41FCsVH0hp8h5z5EGcRA/SyID45C8jrc1HiuAaMAUQsQ8d6+kMxjy/rpKrLcqnDU3KzfyckSYJmIZP0Qzwx7k/HSjTiVbxugNRyv6jdqyLIvjbfMN39rcCp8CBZKM5mSm9y31vhZv2vT7ZlcvvPcBSNWmK9ssofBZ6jv2Pc)
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AGOL_referer tensing.com
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Expiration_Time 360
+DEFAULT_MACRO ArcGISOnlineTokenGetter_WORKSPACE_NAME ""
+INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(ArcGISOnlineTokenGetter_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)}]
+# -------------------------------------------------------------------------
+
+Tcl2 proc $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CoordSysRemover {} {   global FME_CoordSys;   set FME_CoordSys {}; }
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_XML     NOT_ACTIVATED
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CLASSIC NOT_ACTIVATED
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_2D3D    2D_GEOMETRY
+MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_COORDS  <Unused>
+INCLUDE [ if { {Geometry Object} == {Geometry Object} } {            puts {MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_XML *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Coordinate List} } {            puts {MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_2D3D 2D_GEOMETRY};            puts {MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {3D Coordinate List} } {            puts {MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_2D3D 3D_GEOMETRY};            puts {MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CLASSIC *} } ]
+INCLUDE [ if { {Geometry Object} == {2D Min/Max Box} } {            set comment {                We need to turn the COORDS which are                    minX minY maxX maxY                into a full polygon list of coordinates            };            set splitCoords [split [string trim {<Unused>}]];            if { [llength $splitCoords] > 4} {               set trimmedCoords {};               foreach item $splitCoords { if { $item != {} } {lappend trimmedCoords $item} };               set splitCoords $trimmedCoords;            };            if { [llength $splitCoords] != 4 } {                error {$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger: Coordinate list is expected to be a space delimited list of four numbers as 'minx miny maxx maxy' - `<Unused>' is invalid};            };            set minX [lindex $splitCoords 0];            set minY [lindex $splitCoords 1];            set maxX [lindex $splitCoords 2];            set maxY [lindex $splitCoords 3];            puts "MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_COORDS $minX $minY $minX $maxY $maxX $maxY $maxX $minY $minX $minY";            puts {MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_2D3D 2D_GEOMETRY};            puts {MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CLASSIC *} } ]
+FACTORY_DEF $($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_XML) CreationFactory    FACTORY_NAME $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_XML_Creator    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______        @Geometry(FROM_ENCODED_STRING,<lt>?xml<space>version=<quote>1.0<quote><space>encoding=<quote>US_ASCII<quote><space>standalone=<quote>no<quote><space>?<gt><lt>geometry<space>dimension=<quote>2<quote><gt><lt>null<solidus><gt><lt><solidus>geometry<gt>)
+FACTORY_DEF $($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CLASSIC) CreationFactory    FACTORY_NAME $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CLASSIC_Creator    $($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_2D3D) $($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_COORDS)    CREATE_AT_END no    OUTPUT FEATURE_TYPE _____CREATED______
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_Cloner    INPUT FEATURE_TYPE _____CREATED______    NUMBER_OF_COPIES 1    COPY_NUMBER_ATTRIBUTE "token"    OUTPUT FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CREATED"        @Tcl2($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CoordSysRemover)        @CoordSys()        fme_feature_type $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger
+
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CREATED Brancher 0 9"   INPUT FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CREATED"   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   OUTPUT PASSED FEATURE_TYPE *     @RemoveAttributes("$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CREATED Brancher 0 9".BranchingFactory.Count)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AttributeManager    INPUT  FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Trigger_CREATED"    MULTI_FEATURE_MODE NO     NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    ATTR_ACTION { "" "agol_username" "$($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AGOL_username$encode)" "SET_TO" }      ATTR_ACTION { "" "agol_password" "$($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AGOL_password$encode)" "SET_TO" }      ATTR_ACTION { "" "agol_referer" "$($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AGOL_referer$encode)" "SET_TO" }      ATTR_ACTION { "" "agol_expiration" "$($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Expiration_Time$encode)" "SET_TO" }    OUTPUT OUTPUT FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AttributeManager_OUTPUT"
+
+# -------------------------------------------------------------------------
+
+
+FME_PYTHON_PATH "$(FME_MF_DIR)"
+
+FACTORY_DEF * PythonFactory    FACTORY_NAME $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_GetAgoToken    INPUT  FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AttributeManager_OUTPUT"    SYMBOL_NAME processFeature    PYTHON_NAMESPACE FMEOBJECTS    SOURCE_CODE import<space>fme<lf>import<space>fmeobjects<lf>import<space>requests<lf><lf><lf>def<space>processFeature<openparen>feature<closeparen>:<lf><space><space><space><space>url<space>=<space><apos>https:<solidus><solidus>www.arcgis.com<solidus>sharing<solidus>generateToken<apos><lf><space><space><space><space>agol_username<space>=<space>feature.getAttribute<openparen><apos>agol_username<apos><closeparen><lf><space><space><space><space>agol_password<space>=<space>feature.getAttribute<openparen><apos>agol_password<apos><closeparen><lf><space><space><space><space>referer<space>=<space>feature.getAttribute<openparen><apos>agol_referer<apos><closeparen><lf><space><space><space><space>expiration_time<space>=<space>feature.getAttribute<openparen><apos>agol_expiration<apos><closeparen><lf><lf><space><space><space><space>body<space>=<space><opencurly><lf><space><space><space><space><space><space><space><space><apos>username<apos>:<space>agol_username<comma><lf><space><space><space><space><space><space><space><space><apos>password<apos>:<space>agol_password<comma><lf><space><space><space><space><space><space><space><space><apos>referer<apos>:<space>referer<comma><lf><space><space><space><space><space><space><space><space><apos>request<apos>:<space><apos>gettoken<apos><comma><lf><space><space><space><space><space><space><space><space><apos>f<apos>:<space><apos>json<apos><comma><lf><space><space><space><space><space><space><space><space><apos>expiration<apos>:<space>expiration_time<lf><space><space><space><space><space><space><space><space><closecurly><lf><space><space><space><space>request<space>=<space>requests.post<openparen>url<comma><space>headers=<opencurly><closecurly><comma><space>data=body<closeparen>.json<openparen><closeparen><lf><space><space><space><space>token<space>=<space>request<openbracket>u<apos>token<apos><closebracket><lf><space><space><space><space>feature.setAttribute<openparen><apos>token<apos><comma><space>token<closeparen><lf>    OUTPUT PYOUTPUT FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_GetAgoToken_OUTPUT"
+
+# -------------------------------------------------------------------------
+
+INCLUDE [    set macroLine "MACRO $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AttributeKeeper_07ec12e8_d155_40cd_95a2_2549bacd5b9f5_LIST_EXP ";    foreach attr [split ""] {       set attr [FME_DecodeText $attr];       set attr [regsub "{}$" $attr "{}.*"];       set attr [regsub -all "{}" $attr "\\{\[0-9\]+\\}"];       append macroLine ",^$attr$";    };    puts $macroLine; ]
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AttributeKeeper    INPUT  FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_GetAgoToken_OUTPUT"    OUTPUT FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AttributeKeeper_OUTPUT"        @KeepAttributes(fme_encoded,token,fme_pcre_match,"^fme_$($(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AttributeKeeper_07ec12e8_d155_40cd_95a2_2549bacd5b9f5_LIST_EXP)")
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Output1522329846 Output Collector"   INPUT FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_AttributeKeeper_OUTPUT"   OUTPUT FEATURE_TYPE "$(ArcGISOnlineTokenGetter_WORKSPACE_NAME)_Output"
+INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(ArcGISOnlineTokenGetter_WORKSPACE_NAME))}]
+FACTORY_DEF * TeeFactory   FACTORY_NAME "ArcGISOnlineTokenGetter Output Output Renamer/Nuker"   INPUT FEATURE_TYPE ArcGISOnlineTokenGetter_Output   OUTPUT FEATURE_TYPE ArcGISOnlineTokenGetter_Output
+FACTORY_DEF * BranchingFactory   FACTORY_NAME "ArcGISOnlineTokenGetter_Output Brancher -1 4"   INPUT FEATURE_TYPE ArcGISOnlineTokenGetter_Output   TARGET_FACTORY "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   OUTPUT PASSED FEATURE_TYPE *     @RemoveAttributes("ArcGISOnlineTokenGetter_Output Brancher -1 4".BranchingFactory.Count)
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(WB_CURRENT_CONTEXT)_CREATOR_BRANCH_TARGET"   INPUT FEATURE_TYPE *  OUTPUT FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+FACTORY_DEF * InspectorFactory    FACTORY_NAME AGOLTokenGetter_Output_Prepper    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE ArcGISOnlineTokenGetter_Output    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_BY    GROUP_ATTRIBUTE_PREFIX AGOLTokenGetter_Output    RASTER_REDUCTION NoReduction    POINT_CLOUD_REDUCTION NO_THINNING    OUTPUT RESULT FEATURE_TYPE __viewme__
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME AGOLTokenGetter_Output_Recorder    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    STORE_SCANNED_SCHEMA YES    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA token,varchar<openparen>255<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; ")
+FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
